@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block i %}
+
+<table>
+{% for i in valeurs %}
+
+
+    <tr>
+        <td style="border: black solid" >
+        <span  id="span1" style="color: black">New alert sent {{i.date}}</span><br>
+            <span id="span2" style="color: black">Temperature : {{i.temp}}°C and Humidity : {{i.hum}}% </span>
+            </td>
+
+
+
+    </tr>
+
+
+{% endfor %}
+</table>
+
+
+{% endblock i %}
